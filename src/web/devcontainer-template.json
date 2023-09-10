@@ -1,6 +1,6 @@
 {
   "id": "web",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "name": "Web Dev Environment",
   "description": "All development tools for web development",
   "documentationURL": "https://github.com/aliuq/devcontainers/tree/main/src/web",
