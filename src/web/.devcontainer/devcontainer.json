@@ -1,7 +1,7 @@
 {
   "name": "Web Dev Environment",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-${templateOption:imageVariant}"
-  // "image": "registry.cn-beijing.aliyuncs.com/sync-mirror/typescript-node:1-${templateOption:imageVariant}"
+  // "image": "mcr.microsoft.com/devcontainers/typescript-node:1-${templateOption:imageVariant}"
+  "image": "registry.cn-beijing.aliyuncs.com/sync-mirror/typescript-node:1-${templateOption:imageVariant}"
 
   // 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
   // "features": {},
