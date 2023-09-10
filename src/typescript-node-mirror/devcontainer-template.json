@@ -1,9 +1,9 @@
 {
-  "id": "web",
+  "id": "typescript-node-mirror",
   "version": "1.0.0",
-  "name": "Web Dev Environment",
-  "description": "All development tools for web development",
-  "documentationURL": "https://github.com/aliuq/devcontainers/tree/main/src/web",
+  "name": "Node.js & TypeScript & Mirror",
+  "description": "与 Node.js & TypeScript 一致的开发环境，但是使用了国内镜像源，加速安装依赖",
+  "documentationURL": "https://github.com/aliuq/devcontainers/tree/main/src/typescript-node-mirror",
   "licenseURL": "https://github.com/aliuq/devcontainers/blob/main/LICENSE",
   "options": {
     "imageVariant": {
@@ -20,8 +20,8 @@
         "18-buster",
         "16-buster"
       ],
-      "default": "18-bullseye"
+      "default": "20-bullseye"
     }
   },
-  "platforms": ["Any"]
+  "platforms": ["Node.js", "TypeScript"]
 }
