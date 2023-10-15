@@ -13,4 +13,4 @@
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-template.json](https://github.com/aliuq/devcontainers/blob/main/src/typescript-node-mirror/devcontainer-template.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-template.json](https://github.com/aliuq/devcontainers/blob/main/templates/src/typescript-node-mirror/devcontainer-template.json).  Add additional notes to a `NOTES.md`._
