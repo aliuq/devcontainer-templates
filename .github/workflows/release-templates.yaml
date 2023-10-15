@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy-templates:
+  deploy:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
@@ -18,40 +18,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  deploy-features:
-    if: ${{ github.ref == 'refs/heads/main' }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      packages: write
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: "Publish Features"
-        uses: devcontainers/action@v1
-        with:
-          publish-features: "true"
-          base-path-to-features: "./features/src"
-          generate-docs: "true"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  update-documentation:
-    runs-on: ubuntu-latest
-    environment: documentation
-    if: "github.ref == 'refs/heads/main'"
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Generate Documentation
-        uses: devcontainers/action@v1
-        with:
-          generate-docs: "true"
-          base-path-to-templates: "./templates/src"
-          base-path-to-features: "./features/src"
-
-      - name: Create a PR for Documentation
+      - name: Create PR for Documentation
         id: push_image_info
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
