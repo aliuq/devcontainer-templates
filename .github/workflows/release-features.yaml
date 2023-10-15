@@ -1,4 +1,4 @@
-name: "Release & Generate Documentation"
+name: "Release Features & Generate Documentation"
 on:
   workflow_dispatch:
 
