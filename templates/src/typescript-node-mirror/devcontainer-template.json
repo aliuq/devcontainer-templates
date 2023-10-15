@@ -1,0 +1,27 @@
+{
+  "id": "typescript-node-mirror",
+  "version": "1.0.0",
+  "name": "Node.js & TypeScript & Mirror",
+  "description": "与 Node.js & TypeScript 一致的开发环境，但是使用了国内镜像源，加速安装依赖",
+  "documentationURL": "https://github.com/aliuq/devcontainers/tree/main/src/typescript-node-mirror",
+  "licenseURL": "https://github.com/aliuq/devcontainers/blob/main/LICENSE",
+  "options": {
+    "imageVariant": {
+      "type": "string",
+      "description": "Node.js version (use -bookworm, -bullseye variants on local arm64/Apple Silicon):",
+      "proposals": [
+        "20-bookworm",
+        "18-bookworm",
+        "16-bookworm",
+        "20-bullseye",
+        "18-bullseye",
+        "16-bullseye",
+        "20-buster",
+        "18-buster",
+        "16-buster"
+      ],
+      "default": "20-bullseye"
+    }
+  },
+  "platforms": ["Node.js", "TypeScript"]
+}
