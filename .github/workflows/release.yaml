@@ -48,6 +48,10 @@ jobs:
   deploy-features:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      packages: write
     steps:
       - uses: actions/checkout@v3
 
